@@ -11,6 +11,6 @@ it('should add a login_url filter', function () {
     $class = new WPSingleSignOn($this->apiClient->reveal());
 
     expect($fn)->to->have->been->called(1);
-    expect($fn)->calls(0)->to->have->arguments('login_url', [$class, 'redirectToProvider'], 10, 2);
+    expect($fn)->calls(0)->to->have->arguments(['login_url', [$class, 'redirectToProvider'], 10, 2]);
 });
 ```
