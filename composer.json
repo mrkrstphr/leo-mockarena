@@ -1,5 +1,15 @@
 {
+  "name": "mockarena/leo-mockarena",
+  "description": "An extension to Leo for writing assertions with Mockarena",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Kristopher Wilson",
+      "email": "kristopherwilson@gmail.com"
+    }
+  ],
   "require": {
+    "php": ">=5.6",
     "peridot-php/leo": "^1.5",
     "mockarena/mockarena": "^1.0"
   }
