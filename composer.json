@@ -8,6 +8,11 @@
       "email": "kristopherwilson@gmail.com"
     }
   ],
+  "autoload": {
+    "psr-4": {
+      "Mockarena\\Leo\\": "src"
+    }
+  },
   "require": {
     "php": ">=5.6",
     "peridot-php/leo": "^1.5",
