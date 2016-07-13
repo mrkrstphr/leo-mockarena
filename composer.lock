@@ -1,0 +1,111 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "718875eb19239ca477374adbf4292a17",
+    "content-hash": "565e1d28a71cd549983bfc9fe23162da",
+    "packages": [
+        {
+            "name": "mockarena/mockarena",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mrkrstphr/mockarena.git",
+                "reference": "c45d17a83fd361310d2ad266ac10648c8e5869ce"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mrkrstphr/mockarena/zipball/c45d17a83fd361310d2ad266ac10648c8e5869ce",
+                "reference": "c45d17a83fd361310d2ad266ac10648c8e5869ce",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "peridot-php/leo": "^1.5",
+                "peridot-php/peridot": "^1.18",
+                "squizlabs/php_codesniffer": "^2.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Mockarena\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kristopher Wilson",
+                    "email": "kristopherwilson@gmail.com"
+                }
+            ],
+            "description": "A function mocking utility for PHP",
+            "time": "2016-07-12 19:36:23"
+        },
+        {
+            "name": "peridot-php/leo",
+            "version": "1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/peridot-php/leo.git",
+                "reference": "5ff1a9481faa37a55f5c6569379858dca01312f6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/peridot-php/leo/zipball/5ff1a9481faa37a55f5c6569379858dca01312f6",
+                "reference": "5ff1a9481faa37a55f5c6569379858dca01312f6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "peridot-php/peridot-jumpstart": "~1.0",
+                "peridot-php/peridot-prophecy-plugin": "~1.0",
+                "satooshi/php-coveralls": "~0.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Peridot\\Leo\\": "src/"
+                },
+                "files": [
+                    "src/Interfaces/_interface.bdd.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Brian Scaturro",
+                    "email": "scaturrob@gmail.com"
+                }
+            ],
+            "description": "Next level assertion and matcher library for PHP",
+            "keywords": [
+                "assert",
+                "expect",
+                "expectation",
+                "matcher",
+                "testing"
+            ],
+            "time": "2016-03-02 04:33:43"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

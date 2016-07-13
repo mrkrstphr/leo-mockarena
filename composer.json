@@ -1,0 +1,6 @@
+{
+  "require": {
+    "peridot-php/leo": "^1.5",
+    "mockarena/mockarena": "^1.0"
+  }
+}
