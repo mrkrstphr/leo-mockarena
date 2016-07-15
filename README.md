@@ -1,6 +1,6 @@
 # leo-mockarena
 
-[![Builds](https://img.shields.io/travis/mrkrstphr/leo-mockarena.svg?style=flat-square&maxAge=2592000)]()
+[![Builds](https://img.shields.io/travis/mrkrstphr/leo-mockarena.svg?style=flat-square&maxAge=2592000)](https://travis-ci.org/mrkrstphr/leo-mockarena)
 
 > Extends [Leo's](http://peridot-php.github.io/leo/) matcher library with helpers for evaluating 
 [Mockarena](https://github.com/mrkrstphr/mockarena) mocks.
