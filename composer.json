@@ -15,7 +15,11 @@
   },
   "require": {
     "php": ">=5.6",
-    "peridot-php/leo": "^1.5",
     "mockarena/mockarena": "^1.0"
+  },
+  "require-dev": {
+    "peridot-php/peridot": "^1.18",
+    "peridot-php/leo": "^1.5",
+    "phpspec/prophecy": "^1.6"
   }
 }

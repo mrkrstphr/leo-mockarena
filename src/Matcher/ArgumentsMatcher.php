@@ -34,7 +34,12 @@ class ArgumentsMatcher extends AbstractMatcher
      */
     protected function doMatch($actual)
     {
-        $this->actualArguments = $actual->calls[$this->assertion->flag('calls')];
+        $call = 0;
+        if ($this->assertion && $this->assertion->flag('calls')) {
+            $call = $this->assertion->flag('calls');
+        }
+
+        $this->actualArguments = $actual->calls[$call];
         return $this->expected === $this->actualArguments;
     }
 }

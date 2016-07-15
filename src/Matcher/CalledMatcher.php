@@ -44,6 +44,6 @@ class CalledMatcher extends AbstractMatcher
     {
         $this->functionName = $actual->functionName;
         $this->actualCalls = count($actual->calls);
-        return count($this->actualCalls) === $this->expected;
+        return $this->actualCalls === $this->expected;
     }
 }
