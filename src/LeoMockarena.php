@@ -21,7 +21,7 @@ class LeoMockarena
             return $this->flag('calls', $index);
         });
 
-        $assertion->addMethod('arguments', function (array $args, $message = "") {
+        $assertion->addMethod('arguments', function ($args, $message = "") {
             $this->flag('message', $message);
             return new ArgumentsMatcher($args);
         });
