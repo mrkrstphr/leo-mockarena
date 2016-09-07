@@ -12,10 +12,10 @@ use Peridot\Leo\Matcher\Template\ArrayTemplate;
 class ArgumentsMatcher extends AbstractMatcher
 {
     /**
-     * @var array
+     * @var mixed
      */
     protected $actualArguments;
-    
+
     /**
      * {@inheritdoc}
      */
@@ -40,6 +40,12 @@ class ArgumentsMatcher extends AbstractMatcher
         }
 
         $this->actualArguments = $actual->calls[$call];
+
+        if (is_callable($this->expected)) {
+            call_user_func($this->expected, $this->actualArguments);
+            return true;
+        }
+
         return $this->expected === $this->actualArguments;
     }
 }
