@@ -25,6 +25,18 @@ describe(ArgumentsMatcher::class, function () {
             expect($result->isMatch())->to->be->false();
         });
 
+        it('should call the callback if a callback was passed', function () {
+            $fn = new \Mockarena\MockFunction('foo');
+            $fn->calls[] = [];
+            $fifty = 0;
+            $matcher = new ArgumentsMatcher(function () use (&$fifty) {
+                $fifty = 50;
+            });
+            $matcher->match($fn);
+
+            expect($fifty)->to->equal(50);
+        });
+
         it('should adhere to the calls flag to grab a specific call', function () {
             $fn = new \Mockarena\MockFunction('foo');
             $fn->calls = [[1, 2, 3], [1, 2, 4]];
